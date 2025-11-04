@@ -16,7 +16,7 @@ if (isset($_SESSION['customer_id'])) { // Mengecek apakah customer sudah login (
 }
 
 if (!isset($_SESSION['customer_id'])) { // Jika user belum login (tidak ada session)
-    header('Location: login.php'); // Arahkan user ke halaman login
+    header('Location: login.php'); // Arahka+n user ke halaman login
     exit(); // Hentikan eksekusi kode setelah redirect
 }
 
@@ -94,7 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { // Mengecek apakah form dikirim meng
 <body>
 
 <header>
-<a href="mainpage.php" class="Logo">nahecididi jewelry</a>
+<a href="mainpage.php" class="Logo">Percobaan blablabla jewelry</a>
 <nav class="navbar">
 <a href="#home">Home</a>
 <a href="#about">About</a>

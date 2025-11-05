@@ -94,7 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { // Mengecek apakah form dikirim meng
 <body>
 
 <header>
-<a href="mainpage.php" class="Logo">Percobaan blablabla jewelry</a>
+<a href="mainpage.php" class="Logo">Percobaan git jewelry</a>
 <nav class="navbar">
 <a href="#home">Home</a>
 <a href="#about">About</a>

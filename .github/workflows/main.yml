@@ -9,8 +9,6 @@ jobs:
   deploy:
     runs-on: [self-hosted, Linux, X64]
 
-
-
     steps:
       - name: Test version
         run: echo "VERSION 3"
@@ -34,7 +32,9 @@ jobs:
 
       # 5. Stop container lama
       - name: Stop existing containers
-        run: docker compose down || true
+        run: |
+          docker compose down || true
+          docker rm -f mysql-db || true
 
       # 6. Build ulang project
       - name: Build images

@@ -17,24 +17,26 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2. Set up Docker (optional kalau docker belum jalan)
+      # 2. Ensure Docker is running
       - name: Ensure Docker is running
         run: |
           service docker start || true
 
-      # 3. Show docker info
+      # 3. Docker info
       - name: Docker info
         run: docker info
 
-      # 4. Pull latest images (optional)
+      # 4. Pull latest images
       - name: Pull latest images
         run: docker compose pull || true
 
-      # 5. Stop container lama
+      # 5. Stop and clean old containers
       - name: Stop existing containers
         run: |
           docker compose down || true
           docker rm -f mysql-db || true
+          docker rm -f phpmyadmin || true
+          docker rm -f php-app || true
 
       # 6. Build ulang project
       - name: Build images

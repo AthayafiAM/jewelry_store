@@ -11,7 +11,7 @@ jobs:
 
 steps:
   - name: Test version
-    run: echo "VERSION 4"
+    run: echo "VERSION 3"
 
   - name: Checkout repository
     uses: actions/checkout@v3

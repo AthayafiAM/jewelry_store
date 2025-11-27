@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: LAPTOP-AV8U7QON
+    runs-on: [self-hosted, linux]
 
     steps:
       - name: Test version

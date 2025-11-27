@@ -47,5 +47,3 @@ jobs:
       # 8. Check running status
       - name: Check running containers
         run: docker ps -a
-
-        runs-on: [self-hosted, Linux, X64]

@@ -13,7 +13,7 @@ services:
       - mysql
     environment:
       DB_HOST: mysql
-      DB_NAME: myapp
+      DB_NAME: jewelry_store
       DB_USER: root
       DB_PASSWORD: password
     networks:
@@ -25,7 +25,7 @@ services:
     container_name: mysql-db
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: myapp
+      MYSQL_DATABASE: jewelry_store
       MYSQL_USER: appuser
       MYSQL_PASSWORD: password
       MYSQL_ROOT_HOST: "%"

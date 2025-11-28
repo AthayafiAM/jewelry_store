@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { // Mengecek apakah form dikirim deng
     <div class="container">
       <div class="card login-card">
             <div class="card-body">
-              <p class="login-card-description">Silahkan masuk ke akun Anda</p>
+              <p class="login-card-description">Halo Mas ganteng</p>
 
               <form method="POST" action="">
                 <div class="form-group">

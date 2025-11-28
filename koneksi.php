@@ -1,8 +1,8 @@
 <?php
-$host = "localhost";
+$host = "mysql";
 $user = "root";
-$pass = "";
-$db   = "jewelry_store";
+$pass = "password";
+$db   = "myapp";
 
 $conn = mysqli_connect($host, $user, $pass, $db);
 
